@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    color: #fff;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-cover {
+    width: 240px;
+    height: 60px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.background-cover .cover1 {
+    width: 50%;
+    height: 60px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: bold;
+    background-color: #4D60B6;
+    position: absolute;
+    z-index: 1;
+    text-align: right;
+    line-height: 60px;
+    font-size: 24px;
+    transition: all 0.5s linear;
+}
+
+.background-cover .cover2 {
+    width: 50%;
+    height: 60px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: bold;
+    background-color: #4453A6;
+    position: absolute;
+    font-size: 24px;
+    line-height: 60px;
+    right: 0;
+    z-index: 1;
+    transition: all 0.5s linear;
+}
+
+.item-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 240px;
+    height: 60px;
+    background-color: #E7E7E7;
+    position: absolute;
+}
+
+.main-wrapper:hover .cover1 {
+    transform: translateY(-100%);
+}
+
+.main-wrapper:hover .cover2 {
+    transform: translateY(100%);
+}
+
+.codepen-background {
+    background-color: #000;
+    width: 25px;
+    height: 25px;
+}
+
+.icon-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-block:hover {
+    background-color: #F4F0F9;
+}
+
+.item-background .icon-block a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.icon-block a:hover {
+    animation: bounceEffect 0.3s linear;
+}
+
+
+.item-background .icon {
+    margin: 0 15px;
+}
+
+
+.item-background .icon i {
+    font-size: 25px;
+    transition: transform 0.1s;
+}
+
+.item-background .codepen-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-background .codepen-icon i {
+    font-size: 15px;
+}
+
+.item-background .icon {
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.fa-youtube {
+    color: #F61C0D;
+}
+
+.fa-tiktok {
+    color: #000;
+}
+
+.fa-discord {
+    color: #5865F2;
+}
+
+.fa-codepen {
+    color: #F4F0F9;
+}
+
+
+@keyframes bounceEffect {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
